@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+        $(".location").click(function(){
+          $(".dropdownSec").fadeIn();
+          $(".dropdownleft").fadeOut();
+        });
+
+
+        $('body').on("click", '.closeDropdown', function () {
+            $(".dropdownSec").fadeOut();
+
+        });
+      
+        $(".restaurant-cuisine").click(function(){
+          $(".dropdownleft").fadeIn();
+          $(".dropdownSec").fadeOut();
+        });
+
+
+        $('body').on("click", '.closeDropdown-left', function () {
+            $(".dropdownleft").fadeOut();
+
+        });
+
+        $(".log-in").click(function(){
+          $(".popup").fadeIn();
+        });
+
+        $(".closePopup").click(function(){
+          $(".popup").fadeOut();
+        });
+
+        $(".overlay").click(function(){
+          $(".popup").fadeOut();
+        });
+
+
+        $(".sign-up").click(function(){
+          $(".popup").fadeIn();
+        });
+
+        $(".closePopup").click(function(){
+          $(".popup").fadeOut();
+        });
+
+        $(".overlay").click(function(){
+          $(".popup").fadeOut();
+        });
+
+
+        $(".filter-box").click(function(){
+          $(".popup-filter").fadeIn();
+        });
+
+        $(".closePopup").click(function(){
+          $(".popup-filter").fadeOut();
+        });
+
+        $(".overlayf").click(function(){
+          $(".popup").fadeOut();
+        });
+
+
+          $(".country-dropdown-label").click(function(){
+          $(".dropdown-contry").fadeIn();
+          $(".dropdownleft").fadeOut();
+
+        });
+
+
+        $('body').on("click", '.closeDropdown', function () {
+            $(".dropdown-contry").fadeOut();
+
+        });
+
+
+
+          $(".language-dropdown-label").click(function(){
+          $(".dropdown-language").fadeIn();
+          $(".dropdownleft").fadeOut();
+
+        });
+
+
+        $('body').on("click", '.closeDropdown', function () {
+            $(".dropdown-language").fadeOut();
+
+        });
+
+        $('.accordian').click(function(){
+          $(this).next('.accordianContent').slideToggle();
+          $(this).find('.bi-chevron-down').toggleClass('upIcon');
+        });
+
+
+
+
+    });
+
+
+  </script>   
+    </head>
+    <body>
+    <div class="main">
+                         <div class="deliver-header">
+                         <div class="container">
+                         <ul>
+                         <li class="logo">
+                         <div><img src="img/zomato-logo.png" title="logo" alt="logo"></div>
+                          
+                         </li>
+                         <li class="search-con">
+                         <div class="search-box">
+                         <div class="location">
+                         <i class="bi bi-geo-alt-fill" id="location-ican"></i>
+                         <input type="text" name="" placeholder="Ywca, 1, Ashoka Rd, Hanu">
+                         <i class="bi bi-caret-down-fill" id="down"></i>
+                          <div class="dropdownSec">
+                          <span class="closeDropdown">X</span>
+                          <div>
+                          <i class="bi bi-crosshair2"></i>
+                          <span class="detect-current">Detect current location</span>
+                          <h4>Using GPS</h4>
+                          </div>
+                          </div>
+                          </div>
+                          <div class="line"></div>
+                        <div class="search"><i class="bi bi-search"></i></div>
+                        <div class="search-restaurant"><input type="text" name="" placeholder="Search for restaurant, cuisine or a dish"></div>
+                        </div>
+                        <div class="log-in">
+                        <div class="login">Log in</div>
+                        <div class="sign-up">Sign up</div> 
+                        </div>
+         
+                        </li>
+          
+                        </ul>
+
+                        </div>
+                        </div>
+
+                        <div class="home">
+                        <div class="container">
+                        <div class="home-text">
+                        <span><a href="index.html">Home</a>
+                        <div class="slice">/</div></span>
+                        </div>  
+
+                        <div class="india-text">
+                        <span><a href="#">India</a>
+                        <div class="slice">/</div></span>
+                        </div>
+                        <div class="delhi-text">
+                        <span><a href="#">Delhi NCR</a>
+                        <div class="slice">/</div></span>
+                        </div>  
+                        <div class="central-text">
+                        <span><a href="#">Central Delhi</a>
+                        <div class="slice">/</div></span>
+                        </div>
+                        <h2> <a href="#">Delhi NCR Restaurants</a> </h2>  
+                        </div>   
+                        </div>
+                         
+                         <div class="diningout">
+                         <div class="container">
+                          <a href="Delivery.html">
+                         <div class="deliver-box">
+                         <div class="deliver-deteals">
+                         <div class="img-box"><img src="img/delivery-img.png"></div> 
+                         <h2>Delivery</h2>  
+                         </div> 
+                         </div> 
+                          </a>
+                         <div class="diningOut-box">
+                         <div class="diningOut-deteals">
+                         <div class="img-box"><img src="img/dining-out.png"></div> 
+                         <h2>Dining Out</h2>   
+                         </div> 
+                         </div>
+                          <a href="nightlife.html">
+                         <div class="nightlife-box">
+                         <div class="nightlife-deteals">
+                         <div class="img-box"><img src="img/nightlife.png"></div> 
+                         <h3>Nightlife</h3>   
+                         </div> 
+                         </div>
+                          </a>
+                        <div class="deliver-boder"></div>
+
+                      </div>    
+                      </div>
+
+                      </section>     
+                      </div>
+                      </div>
+
+                  <div class="diningout-collections">
+                  <div class="container">
+                       
+                 <div class="collections">
+                 <h2>Collections</h2>
+                 <div class="explore-curated">
+                  <h6>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</h6>
+                  <a href="#">All collections in Delhi NCR <span>
+                   <i class="bi bi-caret-right-fill"></i>
+                   </span>
+                   </a>
+                  </div>
+
+                  <div class="card">
+                  <div class="box1">
+                   <div class="img-box">
+                   <div class="grediant"></div>
+                   <div class="text-box">
+                   <p>Christmas Special Restaur...</p>
+                   <div class="places">
+                   <h6>22 Places</h6>
+                   <i class="bi bi-caret-right-fill" ></i>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+                   <div class="box2">
+                   <div class="img-box">
+                   <div class="grediant"></div>
+                   <div class="text-box">
+                   <p>Breathe easy & Clean Din...</p>
+                   <div class="places">
+                   <h6>44 Places</h6>
+                   <i class="bi bi-caret-right-fill" ></i>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+                   <div class="box3"> 
+                   <div class="img-box">
+                   <div class="grediant"></div>
+                   <div class="text-box">
+                   <p>Unique Dining Experiences</p>
+                   <div class="places">
+                   <h6>11 Places</h6>
+                   <i class="bi bi-caret-right-fill" ></i>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+                   <div class="box4">
+                   <div class="img-box">
+                   <div class="grediant"></div>
+                   <div class="text-box">
+                   <p>Best Insta-worthy Places</p>
+                   <div class="places">
+                   <h6>21 Places</h6>
+                   <i class="bi bi-caret-right-fill" ></i>
+                   </div>
+                   </div>
+                   </div> 
+                   </div>
+                   </div>
+                   </div> 
+                   </div>  
+                   </div>
+
+
+                   <div class="filter">
+                         <div class="container">
+
+                         <div class="filter-box">
+                           <i class="sc-rbbb40-1 iFnyeo" size="18" color="#9C9C9C"><svg xmlns="http://www.w3.org/2000/svg" fill="#9C9C9C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>filter</title><path d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"></path></svg></i>
+                           Filters 
+                          </div>
+
+                          
+                            <div class="popup-filter">
+                                  <div class="overlayf"></div>
+                                <div class="popupInnerf">
+                                     <div class="header-filer">
+                                         <h2>Filter</h2>
+                                         <img class="closePopup" src="img/cross icon.png">
+                                      </div>
+                                     <section>
+                                       <div class="sort">
+                                         <div class="sort-box">
+                                           <p class="sort-by">Sort by</p>
+                                           <p class="popularity">Popularity</p>
+                                         </div>
+                                         <div class="cuisi-box">
+                                           <p class="cuisi">Cuisines</p>
+                                         </div>
+
+                                          <div class="rati-box">
+                                           <p class="rati">Rating</p>
+                                         </div>
+
+                                         <div class="cost-box">
+                                           <p class="cost-per">Cost per person</p>
+                                         </div>
+
+                                         <div class="morefilter-box">
+                                           <p class="morefilter">More filters</p>
+                                         </div>
+
+                                         
+                                       </div>
+                                       <div class="radio-click">
+                                         <div class="popula">
+                                           <input type="radio" name="">
+                                           <span>Popularity</span>
+                                         </div>
+                                         <div class="popula">
+                                           <input type="radio" name="">
+                                           <span>Popularity</span>
+                                         </div>
+
+                                         <div class="popula">
+                                           <input type="radio" name="">
+                                           <span>Popularity</span>
+                                         </div>
+
+                                         <div class="popula">
+                                           <input type="radio" name="">
+                                           <span>Popularity</span>
+                                         </div>
+
+                                         <div class="popula">
+                                           <input type="radio" name="">
+                                           <span>Popularity</span>
+                                         </div> 
+
+
+                                       </div>
+                                    </section>
+
+                                    <div class="footer">
+                                       <button class="clear-all"> <span>Clear all</span> </button>
+                                       <button class="apply"> <span>Apply</span> </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                           
+                          <div class="gold-box">
+                          <img src="img/gold.webp" width="18px" height="18px">
+                          Gold
+                          </div>
+                         <div class="rating-box">Rating: 4.0+</div>
+
+                          <div class="outdoor-box">Outdoor Seating</div>  
+                           
+                          <div class="serves-box">Serves Alcohol</div> 
+
+                          <div class="opennow-box">Open Now</div> 
+                          </div>  
+                          </div>
+
+                          <div class="banner-diningout">
+                          <img src="img/offer-banner.png">  
+                          </div>
+
+                    
+          
+                      <div class="orderfood-online">
+                      <div class="container">
+                      <h1>Order food online in Jai Singh Road</h1>
+                      </div>
+                      </div>
+
+                      <div class="product">
+                      <div class="container">
+                      <div class="product-det1">
+                      <div class="box1">
+                      <div class="img-box"> <img src="img/connaght-club.png"> </div>
+                      <div class="text-box">
+                      <div class="burger-club">
+                      <h4>Connaught Club House</h4>
+                      <div class="reting-box">
+                      <div class="satr">
+                      <h5>4.1</h5>
+                      <i class="sc-rbbb40-1 iFnyeo" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="8px" height="8px" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fauQLv"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg></i>    
+                      </div> 
+                      </div> 
+                      </div> 
+                      <div class="Cafe-Coffee">
+                      <p>North Indian, Mughlai, Itali...</p>
+                       <h6>₹3,000 for two</h6>
+                      </div>
+                      <p class="janpath">Janpath, New Delhi</p> 
+                      <div class="time">
+                      <div class="left">Closes in 1 hour 12 minutes</div>
+                      <div class="right">1 km</div>
+                      </div>
+                      <div class="slid-pro"></div>
+                      <div class="fllower-pro">
+                       <img src="img/max-dining.png" width="48px" height="18px">
+                       <p>Follows all Max Safety measures for a safe dining experience</p> 
+                      </div> 
+                      </div> 
+                      </div>
+
+                      <div class="box2">
+                      <div class="img-box"> <img src="img/Rectancela-viegle.png" width="328px" height="248px"> </div>
+                      <div class="text-box">
+                      <div class="burger-club">
+                      <h4>Cé La Vie Kitchen & Bar</h4>
+                      <div class="reting-box">
+                      <div class="satr">
+                      <h5>4.3</h5>
+                      <i class="sc-rbbb40-1 iFnyeo" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="8px" height="8px" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fauQLv"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg></i>    
+                      </div> 
+                      </div> 
+                      </div> 
+                      <div class="Cafe-Coffee">
+                      <p>North Indian, Mediterranea...</p>
+                       <h6>₹22,00 for two</h6>
+                      </div> 
+                      <p class="connaught">Connaught Place, New Delhi</p>
+                      <div class="time">
+                      <div class="left">Closes in 18 minutes</div>
+                      <div class="right">1.4 km</div>
+                      </div> 
+                      
+                      </div> 
+                      </div>  
+                     
+                       <div class="box3">
+                      <div class="img-box"> <img src="img/ministry.png"> </div>
+                      <div class="text-box">
+                      <div class="burger-club">
+                      <h4>Ministry Of Beer</h4>
+                      <div class="reting-box">
+                      <div class="satr">
+                      <h5>4.2</h5>
+                      <i class="sc-rbbb40-1 iFnyeo" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="8px" height="8px" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fauQLv"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg></i>    
+                      </div> 
+                      </div> 
+                      </div> 
+                      <div class="Cafe-Coffee">
+                      <p>North Indian, Italian, Asian...</p>
+                       <h6>₹2,300 for two</h6>
+                      </div>
+                      <p class="connaught">Connaught Place, New Delhi</p> 
+                      <div class="time">
+                      <div class="left">Closes in 28 minutes</div>
+                      <div class="right">3 km</div>
+                      </div> 
+                      </div> 
+                      </div>
+                      </div>
+                       
+
+                       <div class="product-det2">
+                      <div class="box1">
+                      <div class="img-box"> <img src="img/fort-city.png"> </div>
+                      <div class="text-box">
+                      <div class="burger-club">
+                      <h4>Fort City Brew Pub</h4>
+                      <div class="reting-box">
+                      <div class="satr">
+                      <h5>4.1</h5>
+                      <i class="sc-rbbb40-1 iFnyeo" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="8px" height="8px" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fauQLv"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg></i>    
+                      </div> 
+                      </div> 
+                      </div> 
+                      <div class="Cafe-Coffee">
+                      <p>Middle Eastern, Mexican,...</p>
+                       <h6>₹2,000 for one</h6>
+                      </div> 
+                     <p class="hauz-khas">Hauz Khas, New Delhi</p>
+                      <div class="time">
+                      <div class="left">Opens at 12noon</div>
+                      <div class="right">1.5 km</div>
+                      </div> 
+                     
+                      </div> 
+                      </div>
+
+                      <div class="box2">
+                      <div class="img-box"> <img src="img/getafix.png" width="328px" height="248px"> </div>
+                      <div class="text-box">
+                      <div class="burger-club">
+                      <h4>Getafix</h4>
+                      <div class="reting-box">
+                      <div class="satr">
+                      <h5>4.3</h5>
+                      <i class="sc-rbbb40-1 iFnyeo" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="8px" height="8px" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fauQLv"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg></i>    
+                      </div> 
+                      </div> 
+                      </div> 
+                      <div class="Cafe-Coffee">
+                      <p>Cafe, Italian, Pizza, Burger,...</p>
+                       <h6>₹2,600 for  two</h6>
+                      </div> 
+                      <p class="Kailash">Kailash Colony, New Delhi</p>
+                      <div class="time">
+                      <div class="left">Opens at 9am</div>
+                      <div class="right">8.6 km</div>
+                      </div> 
+                      
+                      </div> 
+                      </div>  
+                     
+                       <div class="box3">
+                      <div class="img-box"> <img src="img/quoin-Novo.png" width="328px" height="248px"> </div>
+                      <div class="text-box">
+                      <div class="burger-club">
+                      <h4>Quoin - Novotel New Delhi Ae...</h4>
+                      <div class="reting-box">
+                      <div class="satr">
+                      <h5>4.2</h5>
+                      <i class="sc-rbbb40-1 iFnyeo" color="#FFFFFF"><svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="8px" height="8px" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fauQLv"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg></i>    
+                      </div> 
+                      </div> 
+                      </div> 
+                      <div class="Cafe-Coffee">
+                      <p>North Indian, Oriental</p>
+                       <h6>₹3,500 for two</h6>
+                      </div> 
+                      <div class="time">
+                      <div class="left-novotel">Novotel New Delhi Aerocity, Ae...</div>
+                      <div class="right">11.7 km</div>
+                      </div> 
+                     
+                      </div> 
+                      </div>
+                      </div>      
+                      </div> 
+                      </div>
+
+                         
+                          <div class="options-near">
+                            <div class="container">
+                            <p class="near-explore">Explore options near me</p>
+
+                             <div class="cuisines-near accordian">
+                                <h5>Popular cuisines near me</h5>
+                                <i class="bi bi-chevron-down"></i>
+                             </div>
+                             <div class="accordianContent">
+                                <div class="product-ittam">
+                                  <a href="#">Bakery food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Beverages food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Biryani food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Burger food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Chinese food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Coffee food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Continental food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Desserts food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Italian food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Mithai food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Momos food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Mughlai food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">North Indian food near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Pasta food near me</a>
+                                  <span class="srkal"></span>
+                                 </div> 
+                             </div>
+
+                             <div class="cuisines-near accordian">
+                                <h5>Popular restaurant types near me</h5>
+                                <i class="bi bi-chevron-down"></i>
+                             </div>
+                             <div class="accordianContent">
+                               <div class="product-ittam">
+                                  <a href="#">Bakeries near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Bars near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Beverage Shops near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Bhojanalya near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Cafés near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Casual Dining near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Clubs near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Cocktail Bars near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Confectioneries near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Dessert Parlors near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Dhabas near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Fine Dining near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Food Courts near me</a>
+                                  <span class="srkal"></span>
+                                  <a href="#">Food Trucks near me</a>
+                                  <span class="srkal"></span>
+                                 </div> 
+                             </div>
+
+                             <div class="cuisines-near accordian">
+                                <h5>Top Restaurant Chains</h5>
+                                <i class="bi bi-chevron-down"></i>
+                             </div>
+                             <div class="accordianContent">
+                               <div class="product-ittam2">
+                                <a href="#">Bikanervala</a>
+                                <a href="#">Biryani Blues</a>
+                                <a href="#">BTW</a>
+                                <a href="#">Burger King</a>    
+                                <a href="#">Burger Singh</a>
+                                <a href="#">Domino's</a>  
+                                <a href="#">Dunkin' Donuts</a>
+                                <a href="#">Haldiram's</a>
+                                <a href="#">KFC</a>
+                                <a href="#">Krispy Kreme</a>
+                                <a href="#">McDonald's</a>
+                                <a href="#">Moti Mahal Delux</a>    
+                                <a href="#">Om Sweets & Snacks</a>
+                                <a href="#">Pizza Hut</a>  
+                                <a href="#">Sagar Ratna</a>     
+                                </div> 
+                             </div>
+
+                             <div class="cuisines-near accordian">
+                                <h5>Cities We Deliver To</h5>
+                                <i class="bi bi-chevron-down"></i>
+                             </div>
+                             <div class="accordianContent">
+                                <div class="product-ittam2">
+                                <a href="#">Delhi NCR</a>
+                                <a href="#">Kolkata</a>
+                                <a href="#">Mumbai</a>
+                                <a href="#">Bengaluru</a>    
+                                <a href="#">Pune</a>
+                                <a href="#">Hyderabad</a>  
+                                <a href="#">Chennai</a>
+                                <a href="#">Lucknow</a>
+                                <a href="#">Kochi</a>
+                                <a href="#">Jaipur</a>
+                                <a href="#">Ahmedabad</a>
+                                <a href="#">Chandigarh</a>    
+                                <a href="#">Goa</a>
+                                <a href="#">Indore</a>  
+                                <a href="#">Gangtok</a>     
+                                </div>
+                             </div>
+
+                          </div>  
+                      </div>
+
+
+                      <footer>
+                    
+                      <div class="container">
+                      
+                       <div class="header">
+                       
+                       <div>
+                        <img src="img/zomato-logo.png">
+                        </div>
+
+                         <div class="country-dropdown">
+                         <div class="country-dropdown-label">
+                         <div class="dropdown-contry">
+                          <div class="contry-flag">
+                          <div class="india-flag">
+                          <span class="flag"> <img src="img/flag.png" width="26px" height="18px"></span>
+                          <span class="india-text">India</span>
+                          </div>
+                          <div class="uae-flag">
+                          <span class="usa-img"> <img src="img/uae.png" width="22px" height="14px"> </span>
+                          <span class="usa-text">UAS</span>
+                          </div>
+                          </div>
+                          </div>
+                          <div class="india">
+                         <span class="flag"> <img src="img/flag.png"> </span>
+                         <span class="india">India</span>
+                         <i class="bi bi-chevron-down"></i>
+                          </div>
+                        
+                          </div>
+                          <div class="language-dropdown-label">
+                          <div class="dropdown-language">
+                          <section>
+                          <div class="english">English</div>
+                          <div class="türkçe">Türkçe</div>
+                          <div class="hindi">हिंदी</div>
+                          <div class="português">Português (BR)</div>
+                          <div class="indonesian">Indonesian</div>
+                          <div class="português-pt">Português (PT)</div>
+                          <div class="español">Español</div>
+                          <div class="ceština">Čeština</div>
+                          <div class="slovenčina">Slovenčina</div>
+                          <div class="polish">Polish</div>
+                          <div class="italian">Italian</div>
+                          <div class="vietnamese">vietnamese</div>
+                          </section>
+                          </div>  
+                          <i class="bi bi-globe"></i>
+                          <span>English</span>
+                          <i class="bi bi-chevron-down" id="down"></i>
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="details">
+                          <div class="about-mobail">
+                          <div class="about">
+                          <h6>About Zomato</h6>
+
+                           <nav>
+                           <a class="who-are" href="file:///G:/HTNL%20FILE/zomato-new-file/aboutwhoare.html"><p>Who We Are</p></a>
+                           <a class="blog" href="#"><p>Blog</p></a>
+                           <a class="work-us" href="file:///G:/HTNL%20FILE/zomato-new-file/workus.html"><p>Work With Us</p></a>
+                           <a class="investor-relations" href="#"><p>Investor Relations</p></a>
+                           <a class="report-fraud" href="#"><p>Report Fraud</p></a>
+                           <a class="press-kit" href="#"><p>Press Kit</p></a>
+                           <a class="contact-us" href="file:///G:/Html%20file/zomato-new-file/contactus.html"><p>Contact Us</p></a>
+                           </nav>
+                           </div>
+
+                          <div class="zomaverse">
+                          <h6>Zomaverse</h6>
+
+                           <nav>
+                           <a class="who-are" href="#"><p>Zomato</p></a>
+                           <a class="blog" href="#"><p>Blinkit</p></a>
+                           <a class="work-us" href="#"><p>Feeding India</p></a>
+                           <a class="investor-relations" href="#"><p>Hyperpure</p></a>
+                           <a class="report-fraud" href="#"><p>Zomaland</p></a>
+                           </nav>
+                           </div>
+                           </div>
+
+                           <div class="for-restaurants-mobail">
+                           <div class="for-restaurants">
+                           <h6>For Restaurants</h6>
+
+                           <nav>
+                           <a class="who-are" href="#"><p>Partner With Us</p></a>
+                           <a class="blog" href="#"><p>Apps For You</p></a>
+                           <a class="blog" href="#"><p></p></a>
+                           <h6 class="enterprises">For Enterprises</h6>
+                           <a class="report-fraud" href="#"><p>Zomato For Enterprise</p></a>
+                           </nav>
+                           </div>
+
+                          <div class="learn-more">
+                          <h6>Learn More</h6>
+
+                           <nav>
+                           <a class="who-are" href="#"><p>Privacy</p></a>
+                           <a class="blog" href="#"><p>Security</p></a>
+                           <a class="work-us" href="#"><p>Terms</p></a>
+                           <a class="investor-relations" href="#"><p>Sitemap</p></a>
+                          
+                            </nav>
+                            </div>
+                            </div>
+                            <div class="social-links">
+                            <h6>Social links</h6>
+                            <div class="icon">
+                            <a href="#"><img src="img/linkdin-icon.png" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/instagram-icon.webp" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/twitter-logo.png" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/youtube-icon.png" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/facebook-icon.png" width="22px" height="22px"></a>
+                            </div>
+
+                            <div class="play-store">
+                            <img src="img/google-play.png" width="137px" height="40px">
+                            <img src="img/app-store.png" width="137px" height="40px">
+                            </div>
+
+                            </div>
+
+                            </div>
+
+                            <div class="slider"></div>
+
+                            <div class="text">
+                            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+                            </div>
+
+                            </div>
+
+                            </footer>
+
+
+
+                      
+</div>
+</body>
+</html>

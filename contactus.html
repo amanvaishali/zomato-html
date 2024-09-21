@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+        $(".location").click(function(){
+          $(".dropdownSec").fadeIn();
+          $(".dropdownleft").fadeOut();
+        });
+
+
+        $('body').on("click", '.closeDropdown', function () {
+            $(".dropdownSec").fadeOut();
+
+        });
+      
+        $(".restaurant-cuisine").click(function(){
+          $(".dropdownleft").fadeIn();
+          $(".dropdownSec").fadeOut();
+        });
+
+
+        $('body').on("click", '.closeDropdown-left', function () {
+            $(".dropdownleft").fadeOut();
+
+        });
+
+        $(".login").click(function(){
+          $(".popup").fadeIn();
+        });
+
+        $(".closePopup").click(function(){
+          $(".popup").fadeOut();
+        });
+
+        $(".overlay").click(function(){
+          $(".popup").fadeOut();
+        });
+
+
+        $(".sign-up").click(function(){
+          $(".popup").fadeIn();
+        });
+
+        $(".closePopup").click(function(){
+          $(".popup").fadeOut();
+        });
+
+        $(".overlay").click(function(){
+          $(".popup").fadeOut();
+        });
+
+
+          $(".country-dropdown-label").click(function(){
+          $(".dropdown-contry").fadeIn();
+          $(".dropdownleft").fadeOut();
+
+        });
+
+
+        $('body').on("click", '.closeDropdown', function () {
+            $(".dropdown-contry").fadeOut();
+
+        });
+
+
+
+          $(".language-dropdown-label").click(function(){
+          $(".dropdown-language").fadeIn();
+          $(".dropdownleft").fadeOut();
+
+        });
+
+          $(".can-help")
+
+
+        $('body').on("click", '.closeDropdown', function () {
+            $(".dropdown-language").fadeOut();
+
+        });
+
+
+
+        $('.canyou-help').click(function(){
+          $(this).next('.canhelp-Content').slideToggle();
+          $(this).find('.bi-caret-down-fill').toggleClass('upIcon');
+        });
+
+
+        $(".filter-box").click(function(){
+          $(".popup-filter").fadeIn();
+        });
+
+        $(".closePopup").click(function(){
+          $(".popup-filter").fadeOut();
+        });
+
+        $(".overlayf").click(function(){
+          $(".popup").fadeOut();
+        });
+
+
+
+
+    });
+
+
+  </script>   
+    </head>
+    <body>
+    <div class="main">
+                         <div class="deliver-header">
+                         <div class="container">
+                         <ul>
+                         <li class="logo">
+                         <div><img src="img/zomato-logo.png" title="logo" alt="logo"></div>
+                          
+                         </li>
+                         <li class="search-con">
+                         <div class="search-box">
+                         <div class="location">
+                         <i class="bi bi-geo-alt-fill" id="location-ican"></i>
+                         <input type="text" name="" placeholder="Ywca, 1, Ashoka Rd, Hanu">
+                         <i class="bi bi-caret-down-fill" id="down"></i>
+                          <div class="dropdownSec">
+                          <span class="closeDropdown">X</span>
+                          <div>
+                          <i class="bi bi-crosshair2"></i>
+                          <span class="detect-current">Detect current location</span>
+                          <h4>Using GPS</h4>
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="line"></div>
+                          <div class="search"><i class="bi bi-search"></i></div>
+                          <div class="search-restaurant"><input type="text" name="" placeholder="Search for restaurant, cuisine or a dish"></div>
+                          </div>
+                          <div class="log-in">
+                          <div class="login">Log in</div>
+                          <div class="sign-up">Sign up</div> 
+                          </div>
+                          </li>
+
+
+          
+                        </ul>
+
+                        </div>
+                        </div>
+
+                        <div class="popup">
+           <div class="overlay"></div>
+           <div class="popupInner">
+       
+           <div class="header-login">
+           <h2>Login</h2>
+           <img class="closePopup" src="img/cross icon.png">
+           </div>
+            <section>
+            <div class="phone-search">
+              
+             <div class="number">
+             <img src="img/flag.png">
+             <div>
+             <span>+91</span>
+             <i class="bi bi-chevron-down"></i></div>
+             </div>
+             <input type="text" name="" placeholder="Phone">
+            </div>
+            <button><span>Send One Time Password</span></button>
+              <div class="slider">
+                <span>or</span>
+              </div>
+
+             <div class="continue-email">
+             <i class="bi bi-envelope-fill"></i>
+             <span>Continue with Email</span>
+             </div>
+
+             <div class="continue-google">
+             <img src="img/google-icon.png">
+             <span>Continue with Google</span>
+             </div>
+
+            <div class="slider1"></div>
+
+            <div class="new-zomato ">
+            <p>New to Zomato? <span>Create account</span></p> 
+            </div>
+            </section>
+            </div>
+            </div>
+
+            
+           <div class="popup-signup">
+              <div class="overlays"></div>
+                  <div class="popupInners">
+           
+                      <div class="header-sign">
+                           <h2>Sign up</h2>
+                            <img class="closePopup" src="img/cross icon.png">
+                       </div>
+                  <section>
+                      <div class="name-box">
+                         <input type="text"  width="100%" autocomplete="on" value>
+                          <label class="full-name">Full Name</label>
+                       </div>
+                      <div class="email-box">
+                         <input type="text"  width="100%" autocomplete="on" value>
+                         <label class="email">Email</label>
+                        </div>
+            
+               <div class="terms-service">
+              
+                 <input type="checkbox" aria-checked="false" color="#ED5A6B">
+
+                  <span>
+                  I agree to Zomato's 
+
+                  <a href="#">Terms of Service</a>,
+                  <a href="#">Privacy Policy</a> and
+                 <a href="#">Content Policies</a>
+                 </span>
+                 </div>
+
+              <button class="create-account"> <span>Create account</span> </button>
+
+              <div class="slider">
+              <span>or</span>
+              </div>
+
+                <div class="continue-google">
+                    <img src="img/google-icon.png">
+                    <span>Continue with Google</span>
+                 </div>
+
+                   <div class="already-account">
+                   <p>Already have an account? <span>Log in</span></p> 
+                   </div>
+                 </section>
+              </div>
+            </div>
+
+            <div class="contactus-banner">
+               <div class="would-love">
+                  <h1>We would love to hear from you!</h1>
+               </div>
+            </div>
+
+            <div class="contact-det">
+
+              <div class="container">
+                
+                 <div class="contact-bio">
+                   
+                   <section>
+                     
+                          <div class="can-help canyou-help" >
+                             <span class="you-help"> How can we help you? 
+                             <span style="color:rgb(239, 79, 95); font-size:18px;">*</span>     
+                             </span>
+                             <i class="bi bi-caret-down-fill" ></i>
+                          </div>
+
+                          <div class="canhelp-Content">
+                            
+                            <div class="youhelp-det"></div>
+
+                          </div>
+                          
+
+                         <div class="full-name"> 
+                            <input type="text" name="">
+                            <label>Full Name 
+                            <span style="color:rgb(239, 79, 95); font-size:18px;">*</span> 
+                            </label>   
+                          </div> 
+                      
+
+                        <div class="full-name"> 
+                           <input type="text" name="">
+                           <label>Email Address 
+                           <span style="color:rgb(239, 79, 95); font-size:18px;">*</span> 
+                           </label>   
+                         </div>
+                        
+                        <div class="full-name"> 
+                           <input type="text" name="">
+                           <label>Mobile Number (optional) </label> 
+                         </div>
+
+
+                         <div class="textarea">
+                           
+                           <textarea></textarea>
+                            <label>Email Address 
+                            <span style="color:rgb(239, 79, 95); font-size:18px;">*</span> 
+                           </label>   
+                         </div>
+
+                         <button class="submit-feedback"> <span>Submit feedback</span> </button>
+                      
+                       
+
+                   </section>
+
+                 </div>
+
+                 <div class="report-safety">
+                   
+                   <div class="safety-emergency">
+                     <div class="safety-text">Report a Safety Emergency</div>
+                     <div class="committed-using">We are committed to the safety of
+                      everyone using Zomato.
+                    </div>
+
+                    <div class="report-here">
+                       Report here 
+                    </div>
+                  </div>
+
+                  <div class="safety-emergency">
+                     <div class="safety-text">Issue with your live order?</div>
+                     <div class="support-costomer"></div>
+                     <div class="committed-using">Click on the 'Support' or 'Online ordering help' section in your app to connect to our customer support team.
+                    </div>
+
+                  </div>
+
+                 </div>
+
+              </div>
+              
+            </div>
+
+          
+
+                        
+                              
+
+                      <footer>
+                    
+                      <div class="container">
+                      
+                       <div class="header">
+                       
+                       <div>
+                        <img src="img/zomato-logo.png">
+                        </div>
+
+                         <div class="country-dropdown">
+                         <div class="country-dropdown-label">
+                         <div class="dropdown-contry">
+                          <div class="contry-flag">
+                          <div class="india-flag">
+                          <span class="flag"> <img src="img/flag.png" width="26px" height="18px"></span>
+                          <span class="india-text">India</span>
+                          </div>
+                          <div class="uae-flag">
+                          <span class="usa-img"> <img src="img/uae.png" width="22px" height="14px"> </span>
+                          <span class="usa-text">UAS</span>
+                          </div>
+                          </div>
+                          </div>
+                          <div class="india">
+                         <span class="flag"> <img src="img/flag.png"> </span>
+                         <span class="india">India</span>
+                         <i class="bi bi-chevron-down"></i>
+                          </div>
+                        
+                          </div>
+                          <div class="language-dropdown-label">
+                          <div class="dropdown-language">
+                          <section>
+                          <div class="english">English</div>
+                          <div class="türkçe">Türkçe</div>
+                          <div class="hindi">हिंदी</div>
+                          <div class="português">Português (BR)</div>
+                          <div class="indonesian">Indonesian</div>
+                          <div class="português-pt">Português (PT)</div>
+                          <div class="español">Español</div>
+                          <div class="ceština">Čeština</div>
+                          <div class="slovenčina">Slovenčina</div>
+                          <div class="polish">Polish</div>
+                          <div class="italian">Italian</div>
+                          <div class="vietnamese">vietnamese</div>
+                          </section>
+                          </div>  
+                          <i class="bi bi-globe"></i>
+                          <span>English</span>
+                          <i class="bi bi-chevron-down" id="down"></i>
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="details">
+                          <div class="about-mobail">
+                          <div class="about">
+                          <h6>About Zomato</h6>
+
+                           <nav>
+                           <a class="who-are" href="file:///G:/HTNL%20FILE/zomato-new-file/aboutwhoare.html"><p>Who We Are</p></a>
+                           <a class="blog" href="#"><p>Blog</p></a>
+                           <a class="work-us" href="file:///G:/HTNL%20FILE/zomato-new-file/workus.html"><p>Work With Us</p></a>
+                           <a class="investor-relations" href="#"><p>Investor Relations</p></a>
+                           <a class="report-fraud" href="#"><p>Report Fraud</p></a>
+                           <a class="press-kit" href="#"><p>Press Kit</p></a>
+                           <a class="contact-us" href="file:///G:/HTNL%20FILE/zomato-new-file/contactus.html"><p>Contact Us</p></a>
+                           </nav>
+                           </div>
+
+                          <div class="zomaverse">
+                          <h6>Zomaverse</h6>
+
+                           <nav>
+                           <a class="who-are" href="#"><p>Zomato</p></a>
+                           <a class="blog" href="#"><p>Blinkit</p></a>
+                           <a class="work-us" href="#"><p>Feeding India</p></a>
+                           <a class="investor-relations" href="#"><p>Hyperpure</p></a>
+                           <a class="report-fraud" href="#"><p>Zomaland</p></a>
+                           </nav>
+                           </div>
+                           </div>
+
+                           <div class="for-restaurants-mobail">
+                           <div class="for-restaurants">
+                           <h6>For Restaurants</h6>
+
+                           <nav>
+                           <a class="who-are" href="#"><p>Partner With Us</p></a>
+                           <a class="blog" href="#"><p>Apps For You</p></a>
+                           <a class="blog" href="#"><p></p></a>
+                           <h6 class="enterprises">For Enterprises</h6>
+                           <a class="report-fraud" href="#"><p>Zomato For Enterprise</p></a>
+                           </nav>
+                           </div>
+
+                          <div class="learn-more">
+                          <h6>Learn More</h6>
+
+                           <nav>
+                           <a class="who-are" href="#"><p>Privacy</p></a>
+                           <a class="blog" href="#"><p>Security</p></a>
+                           <a class="work-us" href="#"><p>Terms</p></a>
+                           <a class="investor-relations" href="#"><p>Sitemap</p></a>
+                          
+                            </nav>
+                            </div>
+                            </div>
+                            <div class="social-links">
+                            <h6>Social links</h6>
+                            <div class="icon">
+                            <a href="#"><img src="img/linkdin-icon.png" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/instagram-icon.webp" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/twitter-logo.png" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/youtube-icon.png" width="22px" height="22px"></a>
+                            <a href="#"><img src="img/facebook-icon.png" width="22px" height="22px"></a>
+                            </div>
+
+                            <div class="play-store">
+                            <img src="img/google-play.png" width="137px" height="40px">
+                            <img src="img/app-store.png" width="137px" height="40px">
+                            </div>
+
+                            </div>
+
+                            </div>
+
+                            <div class="slider"></div>
+
+                            <div class="text">
+                            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+                            </div>
+
+                            </div>
+
+                            </footer>
+
+
+
+                      
+</div>
+</body>
+</html>
